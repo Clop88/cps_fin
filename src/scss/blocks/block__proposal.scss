@@ -1,0 +1,49 @@
+$color_1: #1B1C21;
+$font-family_1: 'TT Lakes';
+$background-color_1: #F8F8F8;
+
+/*КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ*/
+.container__proposal {
+	min-width: 320px;
+}
+.proposal {
+	padding-top: 17px;
+	min-width: 297px;
+	background-color: $background-color_1;
+	flex-wrap: wrap;
+}
+.price__nds {
+	font-family: $font-family_1;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: start;
+	color: $color_1;
+	margin: 17px;
+}
+.proposal__commercial {
+	display: flex;
+	text-decoration: none;
+	font-family: $font-family_1;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	color: $color_1;
+	margin-left: 17px;
+	text-align: start;
+	flex-wrap: wrap;
+	width: 280px;
+	padding-bottom: 40px;
+	background-color: $background-color_1;
+}
+.arrow-right {
+	width: 5px;
+	height: 5px;
+	border: 2px solid #FF3E79;
+	border-left: 0;
+	border-top: 0;
+	transform: rotate(315deg);
+	position: relative;
+	left: 110px;
+	bottom: 12px;
+}

@@ -1,0 +1,25 @@
+$color_1: #7E7E82;
+$font-family_1: 'TT Lakes';
+
+/*HEADER - РЕМОНТ РАЗЛИЧНЫХ ВИДОВ БРЕНДОВ*/
+.brands {
+	min-width: 320px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	border-bottom: 0;
+	border: 0;
+	border: none;
+	border-top: 2px solid #D9FFF5;
+	background: #ffffff;
+	background: linear-gradient(270deg, rgba(255, 255, 255, 1) 26%, rgba(248, 248, 248, 1) 86%);
+}
+.brands__title {
+	color: $color_1;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: $font-family_1;
+	cursor: pointer;
+	text-transform: uppercase;
+	margin: 16px;
+}

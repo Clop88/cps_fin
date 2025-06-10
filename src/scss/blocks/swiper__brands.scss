@@ -1,0 +1,171 @@
+$background-color_1: #b5b6bc;
+$background-color_2: #ffffff;
+
+/*SWIPER РЕМОНТ РАЗЛИЧНЫХ ВИДОВ БРЕНДОВ*/
+/*НАВИГАЦИЯ БРЕНДОВ-КНОПОК, КОТОРЫЕ ИСПОЛЬЗУЮТСЯ
+В SWIPER РЕМОНТ РАЗЛИЧНЫХ ВИДОВ БРЕНДОВ*/
+.swiper-container {
+  background: #f8f8f8;
+  overflow: hidden;
+  max-width: 768px;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 750px;
+    right: 0;
+    width: 30px;
+    height: 20%;
+    background: linear-gradient(-90deg, rgb(248, 247, 247), transparent);
+    pointer-events: none;
+    z-index: 10;
+  }
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  min-height: 120px;
+  padding: 0;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.brands__btn {
+  float: left;
+  width: 240px;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $background-color_2;
+  height: 72px;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  cursor: pointer;
+  float: left;
+}
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  position: relative;
+  bottom: 50px;
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #dddddd;
+  transition: background-color 0.2s;
+}
+.swiper-pagination-bullet-active {
+  background-color: $background-color_1;
+  transition: background-color 0.5s;
+}
+.navigation__brands {
+  display: none;
+}
+.brand__lenovo {
+  margin-left: 16px;
+  min-width: 130px;
+  min-height: 30px;
+  background-color: $background-color_2;
+  background-image: url('../img/Lenovo.png');
+  background-repeat: no-repeat;
+}
+.brand__go-btn {
+  margin-right: 16px;
+  width: 40px;
+  height: 40px;
+  background-color: $background-color_2;
+  background-image: url('../img/go.png');
+  background-repeat: no-repeat;
+}
+.cards__go-btn {
+  margin-right: 16px;
+  width: 40px;
+  height: 40px;
+  background-color: $background-color_2;
+  background-image: url('../img/go.png');
+  background-repeat: no-repeat;
+}
+.brand__samsung {
+  margin-left: 16px;
+  min-width: 116px;
+  min-height: 39px;
+  background-color: $background-color_2;
+  background-image: url('../img/Samsung.png');
+  background-repeat: no-repeat;
+}
+.brand__apple {
+  margin-left: 16px;
+  min-width: 44px;
+  min-height: 44px;
+  background-color: $background-color_2;
+  background-image: url('../img/Apple.png');
+  background-repeat: no-repeat;
+}
+.brand__viewsonic {
+  margin-left: 16px;
+  min-width: 128px;
+  min-height: 21px;
+  background-color: $background-color_2;
+  background-image: url('../img/Sonic.png');
+  background-repeat: no-repeat;
+}
+.brand__bosch {
+  margin-left: 16px;
+  min-width: 129px;
+  min-height: 30px;
+  background-color: $background-color_2;
+  background-image: url('../img/Bosch.png');
+  background-repeat: no-repeat;
+}
+.brand__hp {
+  margin-left: 16px;
+  min-width: 52px;
+  min-height: 52px;
+  background-color: $background-color_2;
+  background-image: url('../img/HP.png');
+  background-repeat: no-repeat;
+}
+.brand__aser {
+  margin-left: 16px;
+  min-width: 94px;
+  min-height: 24px;
+  background-color: $background-color_2;
+  background-image: url('../img/Aser.png');
+  background-repeat: no-repeat;
+}
+.brand__sony {
+  margin-left: 16px;
+  min-width: 128px;
+  min-height: 26px;
+  background-color: $background-color_2;
+  background-image: url('../img/Sony.png');
+  background-repeat: no-repeat;
+}
+.brand__lenovo1 {
+  margin-left: 16px;
+  min-width: 108px;
+  min-height: 32px;
+  background-color: $background-color_2;
+  background-image: url('../img/Lenovo.png');
+  background-repeat: no-repeat;
+}
+.brand__samsung1 {
+  margin-left: 16px;
+  min-width: 116px;
+  min-height: 39px;
+  background-color: $background-color_2;
+  background-image: url('../img/Samsung.png');
+  background-repeat: no-repeat;
+}
+.brand__apple1 {
+  margin-left: 16px;
+  min-width: 130px;
+  min-height: 44px;
+  background-color: $background-color_2;
+  background-image: url('../img/Apple.png');
+  background-repeat: no-repeat;
+}

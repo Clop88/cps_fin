@@ -1,0 +1,36 @@
+$color_1: #7E7E82;
+$font-family_1: 'TT Lakes';
+$background-color_1: #F8F8F8;
+
+
+	.footer {
+		flex-direction: column;
+		background-color: $background-color_1;
+		color: $color_1;
+		font-size: 14px;
+		font-weight: 500;
+		font-family: $font-family_1;
+		margin: 0;
+		padding: 0;
+		border-top: 1px solid #D9FFF5;
+		padding-bottom: 20px;
+	}
+
+.footer__apesong {
+	text-align: center;
+	margin: 16px;
+}
+.footer__info {
+	text-align: center;
+	margin: 16px;
+}
+.footer__politic {
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	background-color: $background-color_1;
+	color: $color_1;
+	font-size: 14px;
+	font-weight: 500;
+	font-family: $font-family_1;
+}

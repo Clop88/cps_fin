@@ -1,0 +1,146 @@
+$color_1: #7E7E82;
+$font-family_1: 'TT Lakes';
+$background-color_1: #F8F8F8;
+$background-color_2: #ffffff;
+$border-color_1: #B8FFEC;
+
+/*НАВИГАЦИЯ ГОРИЗОНТАЛЬНОГО МЕНЮ*/
+.navigation {
+	background-color: $background-color_1;
+	margin: 0;
+}
+.navigation__title {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 16px;
+}
+.navigation__servis {
+	display: none;
+}
+.navigation__icon--highlight {
+	width: 5px;
+	height: 40px;
+	border: none;
+	background: url('../img/highlight.png');
+	background-repeat: no-repeat;
+}
+.navigation__menu {
+	width: 100%;
+	overflow-x: auto;
+	padding: 0;
+	margin: 0;
+	-webkit-overflow-scrolling: touch;
+	&::after {
+		content: "";
+		position: absolute;
+		top: 150px;
+		right: 0;
+		width: 30px;
+		height: 10%;
+		background: linear-gradient(-90deg, rgb(248, 247, 247), transparent);
+		pointer-events: none;
+		z-index: 10;
+	}
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+.navigation__scroll-menu {
+	display: inline-flex;
+	gap: 1px;
+	padding: 0 10px;
+	margin-bottom: 10px;
+	white-space: nowrap;
+}
+.navigation__menu-element--devises {
+	padding: 10px 17px;
+	border: 2px solid transparent;
+	border-radius: 10px;
+	background-color: $background-color_1;
+	color: $color_1;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: $font-family_1;
+	cursor: pointer;
+}
+.navigation__menu-element--services {
+	padding: 10px 17px;
+	border: 2px solid transparent;
+	border-radius: 10px;
+	background-color: $background-color_1;
+	color: $color_1;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: $font-family_1;
+	cursor: pointer;
+}
+.navigation__menu-element--price {
+	padding: 10px 17px;
+	border: 2px solid transparent;
+	border-radius: 10px;
+	background-color: $background-color_1;
+	color: $color_1;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: $font-family_1;
+	cursor: pointer;
+}
+.navigation__menu-element--specprice {
+	padding: 10px 17px;
+	border: 2px solid transparent;
+	border-radius: 10px;
+	background-color: $background-color_1;
+	color: $color_1;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: $font-family_1;
+	cursor: pointer;
+}
+.navigation__menu-element--adress {
+	padding: 10px 17px;
+	border: 2px solid transparent;
+	border-radius: 10px;
+	background-color: $background-color_1;
+	color: $color_1;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: $font-family_1;
+	cursor: pointer;
+}
+.navigation__menu-element--brands {
+	padding: 10px 17px;
+	border: 2px solid transparent;
+	border-radius: 10px;
+	background-color: $background-color_1;
+	color: $color_1;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: $font-family_1;
+	cursor: pointer;
+}
+.navigation__menu-element--review {
+	padding: 10px 17px;
+	border: 2px solid transparent;
+	border-radius: 10px;
+	background-color: $background-color_1;
+	color: $color_1;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: $font-family_1;
+	cursor: pointer;
+}
+.navigation__menu-elements {
+	&:hover {
+		background-color: $background-color_2;
+		border-color: $border-color_1;
+	}
+}
+
+:focus {
+	background-color: $background-color_2;
+	border-color: $border-color_1;
+}
+.navigation__reviews-button--review {
+	display: none;
+}

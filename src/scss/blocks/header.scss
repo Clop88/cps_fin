@@ -1,0 +1,120 @@
+$background-color_1: #FFFFFF;
+$background-color_2: #ffffff;
+
+/*HEADER 320*/
+.header {
+	min-width: 320px;
+	height: 90px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 0;
+	border: 0;
+	background-color: $background-color_1;
+	border: none;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #D9FFF5;
+}
+.header__menu {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-left: 16px;
+}
+.header__servis {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	margin-right: 16px;
+}
+.header__icon--menu {
+	width: 40px;
+	height: 40px;
+	border: none;
+	background: url('../img/burger.png');
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-color: $background-color_2;
+	cursor: pointer;
+}
+.header__logo {
+	width: 97px;
+	height: 53px;
+	border: none;
+	background-image: url('../img/Group.png');
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-color: $background-color_2;
+}
+.header__divider {
+	width: 10px;
+	height: 32px;
+	border: none;
+	background: url('../img/divider.png');
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-color: $background-color_2;
+	display: none;
+}
+.header__dividerer {
+	width: 10px;
+	height: 32px;
+	border: none;
+	background: url('../img/dividerer.png');
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-color: $background-color_2;
+}
+.header__icon--call {
+	width: 40px;
+	height: 40px;
+	border: none;
+	background: url('../img/call.png');
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-color: $background-color_2;
+	display: none;
+	cursor: pointer;
+}
+.header__icon--chat {
+	width: 40px;
+	height: 40px;
+	border: none;
+	background: url('../img/chat.png');
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-color: $background-color_2;
+	display: none;
+	cursor: pointer;
+}
+.header__icon--profile {
+	width: 40px;
+	height: 40px;
+	border: none;
+	background: url('../img/profile.png');
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-color: $background-color_2;
+	display: none;
+	cursor: pointer;
+}
+.header__icon--repair {
+	width: 40px;
+	height: 40px;
+	border: none;
+	background: url('../img/repair.png');
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-color: $background-color_2;
+	cursor: pointer;
+}
+.header__icon--checkstatus {
+	width: 40px;
+	height: 40px;
+	border: none;
+	background: url('../img/checkstatus.png');
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-color: $background-color_2;
+	cursor: pointer;
+}

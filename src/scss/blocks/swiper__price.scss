@@ -1,0 +1,173 @@
+$color_1: #1b1c21;
+$color_2: #7e7e82;
+$font-family_1: 'TT Lakes';
+$background-color_1: #f8f8f8;
+$background-color_2: #b5b6bc;
+$background-color_3: #ffffff;
+
+/*SWIPER - ЦЕНЫ ЗА УСЛУГИ*/
+/*НАВИГАЦИЯ КНОПОК, КОТОРЫЕ ИСПОЛЬЗУЮТСЯ
+В SWIPER - ЦЕНЫ ЗА УСЛУГИ*/
+.swiper-container3 {
+  background: #f8f8f8;
+  padding-bottom: 10px;
+  background-color: $background-color_1;
+  overflow: hidden;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 1310px;
+    right: 0;
+    width: 52px;
+    height: 30%;
+    background: linear-gradient(-90deg, rgb(248, 247, 247), transparent);
+    pointer-events: none;
+    z-index: 10;
+  }
+}
+.swiper-pagination3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: -30px;
+  padding-bottom: 20px;
+}
+.swiper-pagination__servis-bullet {
+  width: 12px;
+  height: 12px;
+  background: #dddddd;
+  transition: background-color 0.2s;
+}
+.swiper-pagination__servis-bullet-active {
+  background-color: $background-color_2;
+  transition: background-color 0.5s;
+}
+.basket-diagnostics {
+  width: 120px;
+  height: 35px;
+  background-color: $background-color_3;
+  background-image: url('../img/Basket.png');
+  background-repeat: no-repeat;
+  border: none;
+  position: relative;
+  left: 100px;
+  bottom: 30px;
+  cursor: pointer;
+}
+.basket-screenremove {
+  width: 120px;
+  height: 35px;
+  background-color: $background-color_3;
+  background-image: url('../img/Basket.png');
+  background-repeat: no-repeat;
+  border: none;
+  position: relative;
+  left: 100px;
+  bottom: 30px;
+  cursor: pointer;
+}
+.basket-dinamicremove {
+  width: 120px;
+  height: 35px;
+  background-color: $background-color_3;
+  background-image: url('../img/Basket.png');
+  background-repeat: no-repeat;
+  border: none;
+  position: relative;
+  left: -120px;
+  bottom: -140px;
+  cursor: pointer;
+}
+.basket-test {
+  width: 120px;
+  height: 35px;
+  background-color: $background-color_3;
+  background-image: url('../img/Basket.png');
+  background-repeat: no-repeat;
+  border: none;
+  position: relative;
+  left: -120px;
+  bottom: -140px;
+  cursor: pointer;
+}
+.basket-poremove {
+  width: 120px;
+  height: 35px;
+  background-color: $background-color_3;
+  background-image: url('../img/Basket.png');
+  background-repeat: no-repeat;
+  border: none;
+  position: relative;
+  left: -120px;
+  bottom: -140px;
+  cursor: pointer;
+}
+.repair__window {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-top: 16px;
+  padding-left: 16px;
+  width: 240px;
+  height: 200px;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  cursor: pointer;
+  float: left;
+  text-decoration: none;
+  color: $color_1;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: $font-family_1;
+  background: #ffffff;
+}
+.repair-services {
+  color: $color_2;
+  font-weight: 500;
+  margin-right: 10px;
+}
+.repair-price {
+  color: $color_2;
+  font-weight: 500;
+  margin-right: 10px;
+}
+.repair-times {
+  color: $color_2;
+  font-weight: 500;
+  margin-right: 10px;
+}
+.diagnostics {
+  display: flex;
+  width: 220px;
+  padding-bottom: 16px;
+}
+.screenremove {
+  display: flex;
+  width: 220px;
+  padding-bottom: 16px;
+}
+.dinamicremove {
+  display: flex;
+  width: 220px;
+  padding-bottom: 16px;
+}
+.test {
+  display: flex;
+  width: 220px;
+  padding-bottom: 16px;
+}
+.poremove {
+  display: flex;
+  width: 220px;
+  padding-bottom: 16px;
+}
+.price__value {
+  display: flex;
+  width: 220px;
+  padding-bottom: 16px;
+}
+.container__repair {
+  display: none;
+}

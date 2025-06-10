@@ -1,0 +1,250 @@
+$color_1: #1B1C21;
+$color_2: #B5B6BC;
+$color_3: #FF3E79;
+$font-family_1: "TT Lakes";
+$background-color_1: #ffffff;
+$background-color_2: #FFFFFF;
+
+
+/*FEEDBACK-MODAL 768*/
+/*FEEDBACK-MODAL 1440*/
+.feedback-modal {
+	position: fixed;
+	z-index: 300;
+	width: 320px;
+	height: 100%;
+	background-color: $background-color_1;
+	box-shadow: -5px 0px 5px 5px rgba(172, 159, 159, 0.5);
+	right: 0;
+}
+.feedback-base {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	height: 100%;
+	background-color: $background-color_1;
+}
+.feedback-base-active {
+	position: fixed;
+	display: block;
+	width: 320px;
+	height: 620px;
+	background-color: $background-color_1;
+	z-index: 450;
+}
+.feedback-modal__btn--close {
+	width: 40px;
+	height: 40px;
+	margin-left: 16px;
+	margin-top: 25px;
+	border: none;
+	background: url('../img/burger_clos.png');
+	background-repeat: no-repeat;
+	background-color: $background-color_1;
+	cursor: pointer;
+}
+.feedback-modal__heading {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+}
+.feedback-base__pusto {
+	position: fixed;
+	background-color: $background-color_2;
+	width: 100%;
+	height: 100%;
+	opacity: 0.96;
+	z-index: 99;
+}
+.feedback__icon--highlight {
+	width: 5px;
+	height: 40px;
+	padding-right: 12px;
+	border: none;
+	background: url('../img/highlight.png');
+	background-repeat: no-repeat;
+}
+.feedback-modal__title {
+	color: $color_1;
+	font-size: 16px;
+	font-weight: 700;
+	background-color: $background-color_1;
+}
+.form-group {
+	width: 288px;
+	height: 48px;
+	margin-left: 16px;
+	border: 1px solid #EAEAEA;
+	border-radius: 8px;
+	margin-bottom: 16px;
+	input {
+		outline: none;
+		border: none;
+		margin-left: 16px;
+		width: 260px;
+		height: 44px;
+		font-family: $font-family_1;
+		font-weight: 500;
+		font-style: normal;
+		font-size: 16px;
+		color: $color_2;
+	}
+	textarea {
+		outline: none;
+		border: none;
+		margin-left: 16px;
+		width: 260px;
+		height: 44px;
+		font-family: $font-family_1;
+		font-weight: 500;
+		font-style: normal;
+		font-size: 16px;
+		color: $color_2;
+	}
+}
+.form-group__message {
+	width: 288px;
+	height: 118px;
+}
+#usermessage {
+	margin-top: 12px;
+	width: 260px;
+	height: 100px;
+}
+.agreement-conditions {
+	display: block;
+	width: 288px;
+	font-family: $font-family_1;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 14px;
+}
+.agreement-conditions__pd {
+	text-decoration: none;
+	color: $color_3;
+}
+.agreement-conditions__pc {
+	text-decoration: none;
+	color: $color_3;
+}
+.feedback-btn__submit {
+	width: 136px;
+	height: 35px;
+	background-color: $background-color_1;
+	background-image: url('../img/Submit.png');
+	background-repeat: no-repeat;
+	border: none;
+	position: relative;
+	left: 150px;
+	cursor: pointer;
+}
+@media (min-width: 768px) {
+	.feedback-base {
+		display: none;
+	}
+	.feedback-base-active {
+		position: absolute;
+		display: block;
+		width: 320px;
+		height: 0;
+	}
+	.feedback-modal__btn--close {
+		position: absolute;
+		margin-left: -60px;
+		z-index: 150;
+	}
+	.feedback-modal {
+		position: fixed;
+		width: 320px;
+		height: 940px;
+		background-color: $background-color_1;
+		box-shadow: -5px 0px 5px 5px rgba(172, 159, 159, 0.5);
+		z-index: 150;
+	}
+	.feedback__icon--highlight {
+		padding-right: 30px;
+		background: url('../img/highlight2.png');
+		background-repeat: no-repeat;
+	}
+	.form-group {
+		width: 260px;
+		margin-left: 32px;
+		input {
+			width: 240px;
+			font-size: 14px;
+		}
+		textarea {
+			width: 240px;
+			font-size: 14px;
+		}
+	}
+	.form-group__message {
+		width: 260px;
+	}
+	#usermessage {
+		width: 240px;
+	}
+	.agreement-conditions {
+		width: 260px;
+		font-size: 12px;
+	}
+	.feedback-btn__submit {
+		left: 120px;
+		cursor: pointer;
+	}
+}
+@media (min-width: 1440px) {
+	.feedback-base {
+		display: none;
+	}
+	.feedback-base-active {
+		position: absolute;
+		display: block;
+		width: 440px;
+		height: 0;
+	}
+	.feedback-modal__btn--close {
+		position: absolute;
+		margin-left: -60px;
+		z-index: 150;
+	}
+	.feedback-modal {
+		position: fixed;
+		width: 440px;
+		height: 940px;
+		background-color: $background-color_1;
+		box-shadow: -5px 0px 5px 5px rgba(172, 159, 159, 0.5);
+		z-index: 150;
+		right: 0;
+	}
+	.feedback__icon--highlight {
+		padding-right: 30px;
+		background: url('../img/highlight2.png');
+		background-repeat: no-repeat;
+	}
+	.form-group {
+		width: 376px;
+		margin-left: 32px;
+		input {
+			width: 345px;
+		}
+		textarea {
+			width: 345px;
+		}
+	}
+	.form-group__message {
+		width: 376px;
+	}
+	#usermessage {
+		min-width: 355px;
+	}
+	.agreement-conditions {
+		width: 376px;
+	}
+	.feedback-btn__submit {
+		left: 235px;
+		cursor: pointer;
+	}
+}

@@ -1,0 +1,69 @@
+$color_1: #1B1C21;
+$font-family_1: 'TT Lakes';
+$background-color_1: #F8F8F8;
+
+/*ТЕКСТ С ИЗОБРАЖЕНИЕМ*/
+.main {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	min-width: auto;
+	min-height: auto;
+	background-color: $background-color_1;
+	padding-bottom: 35px;
+}
+.main__content {
+	padding: 0;
+	min-width: 275px;
+	min-height: 110px;
+	margin-left: 16px;
+	font-size: 14px;
+	font-weight: 400;
+	color: $color_1;
+	text-wrap: wrap;
+}
+.main__text {
+	width: 288px;
+	max-height: 110px;
+	overflow: hidden;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: $font-family_1;
+	margin: 0;
+	transition: max-height 0.5s ease;
+	position: relative;
+}
+.main__text.expanded {
+	max-height: 1000px;
+	&::after {
+		opacity: 0;
+	}
+}
+.expand-btn__open-closed {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: none;
+	color: $color_1;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: $font-family_1;
+	background-color: $background-color_1;
+	text-decoration: none;
+	cursor: pointer;
+	background: url('../img/expand.png') no-repeat;
+	margin-left: 0;
+	padding-left: 30px;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+.expand-btn__open-closed.expanded {
+	background: url('../img/expandback.png') no-repeat;
+}
+.main__picture--company-sign {
+	display: flex;
+	align-items: center;
+	min-width: 320px;
+	min-height: 176px;
+	background-color: $background-color_1;
+}

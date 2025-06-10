@@ -1,0 +1,73 @@
+$color_1: #1b1c21;
+$font-family_1: 'TT Lakes';
+$background-color_1: #b5b6bc;
+$background-color_2: #ffffff;
+
+/*SWIPER - РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ*/
+/*НАВИГАЦИЯ БРЕНДОВ-КНОПОК, КОТОРЫЕ ИСПОЛЬЗУЮТСЯ
+В SWIPER РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ*/
+.swiper-container2 {
+  background: #f8f8f8;
+  padding-bottom: 30px;
+  overflow: hidden;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 980px;
+    right: 0;
+    width: 30px;
+    height: 45%;
+    background: linear-gradient(-90deg, rgb(248, 247, 247), transparent);
+    pointer-events: none;
+    z-index: 10;
+  }
+}
+.swiper-pagination2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: -30px;
+  padding-bottom: 20px;
+}
+.swiper-pagination__servis-bullet {
+  width: 12px;
+  height: 12px;
+  background: #dddddd;
+  transition: background-color 0.2s;
+}
+.swiper-pagination__servis-bullet-active {
+  background-color: $background-color_1;
+  transition: background-color 0.5s;
+}
+.container__technics {
+  display: none;
+}
+.servis__go-btn {
+  margin-right: 16px;
+  width: 40px;
+  height: 40px;
+  background-color: $background-color_2;
+  background-image: url('../img/go.png');
+  background-repeat: no-repeat;
+  margin-top: 100px;
+}
+.servis__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 16px;
+  padding-left: 16px;
+  width: 210px;
+  height: 160px;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  cursor: pointer;
+  float: left;
+  text-decoration: none;
+  color: $color_1;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: $font-family_1;
+  background: #ffffff;
+}
